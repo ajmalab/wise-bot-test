@@ -1,2 +1,3 @@
 runChecks: true
+pongWithEmphasis: true
 emergencyMergeMethod: merge
