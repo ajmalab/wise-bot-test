@@ -1,3 +1,4 @@
 runChecks: true
-pongWithEmphasis: true
-emergencyMergeMethod: merge
+commands:
+	pongWithEmphasis: true
+	emergencyMergeMethod: merge
