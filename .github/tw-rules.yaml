@@ -1,4 +1,6 @@
 runChecks: true
 commands:
-  pongWithEmphasis: true
-  emergencyMergeMethod: merge
+  ping:
+    pongWithEmphasis: true
+  emergencyMerge:
+    emergencyMergeMethod: merge
