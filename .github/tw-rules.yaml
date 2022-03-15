@@ -1,6 +1,6 @@
 runChecks: true
 commands:
   ping:
-    pongWithEmphasis: blah
+    pongWithEmphasis: true
   emergencyMerge:
     emergencyMergeMethod: me not enum
