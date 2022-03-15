@@ -3,4 +3,4 @@ commands:
   ping:
     pongWithEmphasis: blah
   emergencyMerge:
-    emergencyMergeMethod: merge
+    emergencyMergeMethod: me not enum
