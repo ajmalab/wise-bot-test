@@ -3,4 +3,4 @@ commands:
   ping:
     pongWithEmphasis: true
   emergencyMerge:
-    emergencyMergeMethod: rebase
+    emergencyMergeMethod: invalidmethod
