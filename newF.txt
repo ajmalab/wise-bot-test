@@ -5,3 +5,6 @@ testing invalid config
 
 hola
 yo soy dora
+
+new line
+one more
