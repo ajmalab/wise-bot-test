@@ -36,3 +36,5 @@ hahah
 let's goooo
 
 testing connection pools
+
+testing logging changes
