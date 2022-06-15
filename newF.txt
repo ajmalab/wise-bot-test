@@ -40,3 +40,5 @@ testing connection pools
 testing logging changes
 
 testing logging v2
+
+testing logging v3
