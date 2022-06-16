@@ -44,3 +44,5 @@ testing logging v2
 testing logging v3
 
 testing logging v4
+
+testing log refactoring
