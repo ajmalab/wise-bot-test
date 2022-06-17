@@ -50,3 +50,5 @@ testing log refactoring
 testing final?
 
 test knex return
+
+test last insert
