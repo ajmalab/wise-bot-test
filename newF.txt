@@ -48,3 +48,5 @@ testing logging v4
 testing log refactoring
 
 testing final?
+
+test knex return
