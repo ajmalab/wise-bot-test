@@ -54,3 +54,5 @@ test knex return
 testing db fail
 
 testing db returns 
+
+testing dao fix
