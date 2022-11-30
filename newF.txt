@@ -51,4 +51,10 @@ testing final?
 
 test knex return
 
-test last insert
+testing db fail
+
+testing db returns 
+
+testing scheduler again
+
+testing dao fix
