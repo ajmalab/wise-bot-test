@@ -9,7 +9,7 @@ on:
       - closed
 
 env:
-  SBOM_FILENAME: ${{ github.event.repository.name }}-${{ github.event.pull_request.head.sha }}.json
+  SBOM_FILENAME: ${{ github.event.repository.name }}-${{ github.event.pull_request.head.sha }}
 
 jobs:
   generate_sbom:
@@ -28,13 +28,17 @@ jobs:
         id: generate-sbom
         shell: bash
         run: cdxgen ./ -o ${{env.SBOM_FILENAME}}.json 
+      
+      - name: view files
+        shell: bash
+        run: ls
 
       - uses: actions/upload-artifact@v3
         id: upload-artifact
         continue-on-error: true
         with:
           name: cyclonedx-sbom
-          path: ${{env.SBOM_FILENAME}}.json
+          path: ${{env.SBOM_FILENAME}}
           if-no-files-found: error
       
 
