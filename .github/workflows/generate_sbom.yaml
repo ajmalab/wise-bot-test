@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Setup cdxgen
         shell: bash
-        run: npm install -g @cyclonedx/cdxgen@8.1.1 
+        run: npm install -g @cyclonedx/cdxgen@8.2.4 
       
       - name: Generate sBOM
         id: generate-sbom
