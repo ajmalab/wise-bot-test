@@ -1,5 +1,5 @@
 name: Generate sBOM
-run-name: Generate sBOM
+run-name: generate-sbom
 on:
   workflow_dispatch:
   pull_request:
