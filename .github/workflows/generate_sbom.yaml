@@ -8,29 +8,30 @@ on:
       - synchronize
       - closed
 
+env:
+  SBOM_FILENAME: ${{ github.event.repository.name }}-${{ github.event.pull_request.head.sha }}.json
 
 jobs:
   generate_sbom:
     name: Generate sBOM
     runs-on: ubuntu-latest
     steps:
-      - name: Show github.sha
+      - name: Setup cdxgen
         shell: bash
-        run: echo ${{ github.sha }}
+        run: npm install -g @cyclonedx/cdxgen@8.1.1 
       
-      - name: Show github.event.head.sha
+      - name: Generate sBOM
+        id: generate-sbom
         shell: bash
-        run: echo ${{ github.event.pull_request.head.sha }}
-      
-      - name: Show github.sha on merge
-        if: github.event.pull_request.merged == true
-        shell: bash
-        run: echo ${{ github.sha }}
-      
-      - name: Show github.event.head.sha on merge
-        if: github.event.pull_request.merged == true
-        shell: bash
-        run: echo ${{ github.event.pull_request.head.sha }}
+        run: cdxgen ./ -o ${{ env.SBOM_FILENAME }}
+
+      - uses: actions/upload-artifact@v3
+        id: upload-artifact
+        continue-on-error: true
+        with:
+          name: cyclonedx-sbom
+          path: ${{ env.SBOM_FILENAME }}
+          if-no-files-found: error
       
 
       
