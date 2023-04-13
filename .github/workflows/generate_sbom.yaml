@@ -23,14 +23,14 @@ jobs:
       - name: Generate sBOM
         id: generate-sbom
         shell: bash
-        run: cdxgen ./ -o ${{ env.SBOM_FILENAME }}
+        run: cdxgen ./ -o bom.json
 
       - uses: actions/upload-artifact@v3
         id: upload-artifact
         continue-on-error: true
         with:
           name: cyclonedx-sbom
-          path: ${{ env.SBOM_FILENAME }}
+          path: bom.json
           if-no-files-found: error
       
 
