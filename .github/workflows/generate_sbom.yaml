@@ -29,17 +29,14 @@ jobs:
         shell: bash
         run: cdxgen ./ -o ${{env.SBOM_FILENAME}} 
       
+      - name: create file
+        shell: bash
+        run: echo "hello" >> hello.txt 
+
       - name: view files
         shell: bash
         run: ls
 
-      - uses: actions/upload-artifact@v3
-        id: upload-artifact
-        continue-on-error: true
-        with:
-          name: cyclonedx-sbom
-          path: ${{env.SBOM_FILENAME}}
-          if-no-files-found: error
       
 
       
