@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:a0374718-3136-422e-bb13-87c60b4b0f07" version="1">
+  <metadata>
+    <timestamp>2023-04-13T14:13:15.231Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>cyclonedx</vendor>
+        <name>cdxgen</name>
+        <version>8.2.4</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Prabhu Subramanian</name>
+        <email>prabhu@appthreat.com</email>
+      </author>
+    </authors>
+    <component type="application" bom-ref="pkg:application/wise-bot-test@1.0.0">
+      <publisher/>
+      <group/>
+      <name>wise-bot-test</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:application/wise-bot-test@1.0.0</purl>
+    </component>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:npm/typescript@5.0.4">
+      <publisher/>
+      <group/>
+      <name>typescript</name>
+      <version>5.0.4</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">716f53e56f71637edc73e8df127694bd7f757e8c6d1e4cdadcdc37c24a05e2c4a52a7d0c38d7647449dd8a0fea3c15973649a9961dcdcdac90cc2887338fe1ab</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/typescript@5.0.4</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>./</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>Users/Ajmal.Kottilingal/dev/wise-bot-test/yarn.lock</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+  <dependencies>
+    <dependency ref="pkg:npm/typescript@5.0.4"/>
+    <dependency ref="pkg:application/wise-bot-test@1.0.0">
+      <dependency ref="pkg:npm/typescript@5.0.4"/>
+    </dependency>
+  </dependencies>
+</bom>
