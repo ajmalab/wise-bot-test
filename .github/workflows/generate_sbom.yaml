@@ -9,7 +9,7 @@ on:
       - closed
 
 env:
-  SBOM_FILENAME: ${{ github.event.repository.name }}-${{ github.event.pull_request.head.sha }}
+  SBOM_FILENAME: ${{ github.event.repository.name }}-${{ github.event.pull_request.head.sha }}.json
 
 jobs:
   generate_sbom:
@@ -27,7 +27,7 @@ jobs:
       - name: Generate sBOM
         id: generate-sbom
         shell: bash
-        run: cdxgen ./ -o ${{env.SBOM_FILENAME}}.json 
+        run: cdxgen ./ -o ${{env.SBOM_FILENAME}} 
       
       - name: view files
         shell: bash
