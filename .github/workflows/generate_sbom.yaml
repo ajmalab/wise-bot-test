@@ -27,6 +27,6 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: cyclonedx-sbom
-          path: hello.txt
+          path: hello.json
 
     
