@@ -1,5 +1,5 @@
 name: generate_sbom
-run-name: $${{ github.event.pull_request.head.sha }}
+run-name: ${{ github.event.pull_request.head.sha }}
 on:
   workflow_dispatch:
   pull_request:
@@ -22,13 +22,11 @@ jobs:
       
       - name: make file
         shell: bash
-        run: echo "Hello World">>hello.txt
+        run: echo {msg:"Hello World"}>>hello.json
 
       - uses: actions/upload-artifact@v3
         with:
           name: cyclonedx-sbom
           path: hello.txt
 
-      
-
-      
+    
