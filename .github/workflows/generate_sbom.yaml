@@ -1,5 +1,5 @@
 name: generate_sbom
-run-name: ${{ github.event.pull_request.head.sha }}
+run-name: gen_sbom_${{ github.event.pull_request.head.sha }}
 on:
   workflow_dispatch:
   pull_request:
