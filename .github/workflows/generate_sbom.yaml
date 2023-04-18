@@ -16,9 +16,6 @@ jobs:
     name: Generate sBOM
     runs-on: ubuntu-latest
     steps:
-      - name: Setup cdxgen
-        shell: bash
-        run: npm install -g @cyclonedx/cdxgen@8.1.1 
       
       - name: make file
         shell: bash
@@ -27,6 +24,6 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: cyclonedx-sbom
-          path: sbom.json
+          path: hello.json
 
     
