@@ -20,10 +20,6 @@ jobs:
         shell: bash
         run: npm install -g @cyclonedx/cdxgen@8.1.1 
       
-      - name: Generate sbom
-        shell: bash
-        run: cdxgen ./ -o sbom.json
-      
       - name: make file
         shell: bash
         run: echo {msg:"Hello World"}>>hello.json
