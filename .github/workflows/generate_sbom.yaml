@@ -20,13 +20,17 @@ jobs:
         shell: bash
         run: node -v
 
-      # - name: make file
-      #   shell: bash
-      #   run: echo '{ "components":[{"group": "babel","name": "compat-data"}]}' >> hello.json
+      - name: Setup cdxgen
+        shell: bash
+        run: npm install @cyclonedx/cdxgen@8.4.2
+      
+      - name: Generate sBOM
+        shell: bash
+        run: cdxgen ./ -o cyclonedx-sbom.json
 
-      # - uses: actions/upload-artifact@v3
-      #   with:
-      #     name: cyclonedx-sbom
-      #     path: hello.json
+      - uses: actions/upload-artifact@v3
+        with:
+          name: cyclonedx-sbom
+          path: cyclonedx-sbom.json
 
     
