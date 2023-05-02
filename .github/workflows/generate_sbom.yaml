@@ -22,7 +22,7 @@ jobs:
       
       - name: Generate sBOM
         shell: bash
-        run: cdxgen ./ -o cyclonedx-sbom.json
+        run: cdxgen
       
       - name: list files
         shell: bash
