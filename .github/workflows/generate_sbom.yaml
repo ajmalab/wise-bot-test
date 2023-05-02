@@ -22,7 +22,7 @@ jobs:
 
       - name: make file
         shell: bash
-        run: echo "{components:[{group: babel,name: compat-data}]}"">>hello.json
+        run: echo '{ "components":[{"group": "babel","name": "compat-data"}]}' >> hello.json
 
       - uses: actions/upload-artifact@v3
         with:
