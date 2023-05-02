@@ -20,13 +20,13 @@ jobs:
         shell: bash
         run: node -v
 
-      - name: make file
-        shell: bash
-        run: echo '{ "components":[{"group": "babel","name": "compat-data"}]}' >> hello.json
+      # - name: make file
+      #   shell: bash
+      #   run: echo '{ "components":[{"group": "babel","name": "compat-data"}]}' >> hello.json
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: cyclonedx-sbom
-          path: hello.json
+      # - uses: actions/upload-artifact@v3
+      #   with:
+      #     name: cyclonedx-sbom
+      #     path: hello.json
 
     
