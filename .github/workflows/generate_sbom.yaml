@@ -16,13 +16,9 @@ jobs:
     name: Generate sBOM
     runs-on: ubuntu-latest
     steps:
-      - name: test for node
-        shell: bash
-        run: node -v
-
       - name: Setup cdxgen
         shell: bash
-        run: npm install @cyclonedx/cdxgen@8.4.2
+        run: npm install -g @cyclonedx/cdxgen@8.4.2
       
       - name: Generate sBOM
         shell: bash
