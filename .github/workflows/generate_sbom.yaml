@@ -16,10 +16,13 @@ jobs:
     name: Generate sBOM
     runs-on: ubuntu-latest
     steps:
-      
+      - name: test for node
+        shell: bash
+        run: node -v
+
       - name: make file
         shell: bash
-        run: echo {msg:"Hello World"}>>hello.json
+        run: echo "{components:[{group: babel,name: compat-data}]}"">>hello.json
 
       - uses: actions/upload-artifact@v3
         with:
