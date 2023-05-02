@@ -24,11 +24,11 @@ jobs:
       
       - name: Generate sBOM
         shell: bash
-        run: cdxgen ./ -o ${{SBOM_FILENAME}}
+        run: cdxgen ./ -o ${{env.SBOM_FILENAME}}
 
       - uses: actions/upload-artifact@v3
         with:
           name: cyclonedx-sbom
-          path: ${{SBOM_FILENAME}}
+          path: ${{env.SBOM_FILENAME}}
 
     
