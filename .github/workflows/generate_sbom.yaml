@@ -23,6 +23,10 @@ jobs:
       - name: Generate sBOM
         shell: bash
         run: cdxgen ./ -o cyclonedx-sbom.json
+      
+      - name: list files
+        shell: bash
+        run: ls
 
       - uses: actions/upload-artifact@v3
         with:
