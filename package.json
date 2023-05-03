@@ -5,7 +5,9 @@
   "repository": "git@github.com:ajmalab/wise-bot-test.git",
   "author": "Ajmal Kottilingal <ajmal.kottilingal@transferwise.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "got": "^12.6.0"
+  },
   "devDependencies": {
     "typescript": "^5.0.4"
   }
