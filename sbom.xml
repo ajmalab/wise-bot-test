@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:1c0e4a0e-635a-40e8-b89c-48c17deba8a6" version="1">
+  <metadata>
+    <timestamp>2023-05-03T16:20:02.713Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>cyclonedx</vendor>
+        <name>cdxgen</name>
+        <version>8.2.4</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Prabhu Subramanian</name>
+        <email>prabhu@appthreat.com</email>
+      </author>
+    </authors>
+    <component type="application" bom-ref="pkg:application/wise-bot-test@1.0.0">
+      <publisher/>
+      <group/>
+      <name>wise-bot-test</name>
+      <version>1.0.0</version>
+      <description/>
+      <licenses/>
+      <purl>pkg:application/wise-bot-test@1.0.0</purl>
+    </component>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:npm/%40sindresorhus/is@5.3.0">
+      <publisher/>
+      <group>@sindresorhus</group>
+      <name>is</name>
+      <version>5.3.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">097eade12610dfb973c62700aac06dc40dceb1e7a856b87d7122793c561a9b41a4b1896ea517f2d40f90e1a603df3bdc7c408b734ccedaef999d1d9460abc2af</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/%40sindresorhus/is@5.3.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/%40szmarczak/http-timer@5.0.1">
+      <publisher/>
+      <group>@szmarczak</group>
+      <name>http-timer</name>
+      <version>5.0.1</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">f8f9905f43e20183cc79561edb7ecb24062f38c616d63dab1f96113b24b76f8093549ba6df81df46f2af033a331c0406d139c735d51f63d9c2794c9102cfff73</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/%40szmarczak/http-timer@5.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/cacheable-lookup@7.0.0">
+      <publisher/>
+      <group/>
+      <name>cacheable-lookup</name>
+      <version>7.0.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">faa272c78c622ab6bc999adcc218cc44c5210f9351d51f1eb0f933218c57f7a26279c168c405c5bb3fc6a51dfe7afe0f13559a9878a9efcc15d2f7263d0b69f3</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/cacheable-lookup@7.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/cacheable-request@10.2.10">
+      <publisher/>
+      <group/>
+      <name>cacheable-request</name>
+      <version>10.2.10</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">bfa581f84a66fea3b81dd962a3fb1f527ebdaf94a1821dfd4ac13d0d27786c87b33f499b94e94e6c8f88d2450433b27424573e23ba5278c79868e62d5f537f55</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/cacheable-request@10.2.10</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/decompress-response@6.0.0">
+      <publisher/>
+      <group/>
+      <name>decompress-response</name>
+      <version>6.0.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">696df9c9933a05bff8a099599dc307d8b0a866d2574d1c444b5eef137868462a305369161da24a1644810e70d1f9c9bd27ef5085799113221fbf4a638bd7a309</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/decompress-response@6.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/defer-to-connect@2.0.1">
+      <publisher/>
+      <group/>
+      <name>defer-to-connect</name>
+      <version>2.0.1</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">e2dbedb5ea571b555a606ad189b93913025dd6de2e76e9d239531d2d200bea621dd62c78dfca0fc0f64c00b638d450a28ee90ed4bd2dc0d706b1dcd2edd1e00e</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/defer-to-connect@2.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/form-data-encoder@2.1.4">
+      <publisher/>
+      <group/>
+      <name>form-data-encoder</name>
+      <version>2.1.4</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">c8361280d32b6aabe7c621173b8862f3cf986716870ba40acdbe4df388910930de44eed900ba62aff95599ffee5d4867c14af63b81d4f2cfe7eb1fb23634241f</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/form-data-encoder@2.1.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/get-stream@6.0.1">
+      <publisher/>
+      <group/>
+      <name>get-stream</name>
+      <version>6.0.1</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">b6ce968beda3de3423aa2ef4c3902537c0c59e44b00be32a9b113374400b076a976585775ff6f50937e03cb18934c7805b174f7d4f053b59acdcd51f68708f62</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/get-stream@6.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/got@12.6.0">
+      <publisher/>
+      <group/>
+      <name>got</name>
+      <version>12.6.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">59371a43deb7c55f7b30ddf1d3f09b02b89715971709f831569f7523e65eea96b040e6bb4a0cf04b1db320926c5fe9136a332756cd317050f54f164a16a85d9d</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/got@12.6.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/http-cache-semantics@4.1.1">
+      <publisher/>
+      <group/>
+      <name>http-cache-semantics</name>
+      <version>4.1.1</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">7abdbde4328f56c57cda3e64c351a3b7e00303f5d81ec6a397cd9c18d406d9eca83e4be05215fe9c32327a5ce12166dbb173f7f441dc23a979b58b36158a985d</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/http-cache-semantics@4.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/http2-wrapper@2.2.0">
+      <publisher/>
+      <group/>
+      <name>http2-wrapper</name>
+      <version>2.2.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">919074c31328d2c8753de8728c951644511df7d282e532e36767142c2e1ff62a8904098a4105c42028f197988f251c0fe3476978716aaa19bbb580af383a6aa5</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/http2-wrapper@2.2.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/json-buffer@3.0.1">
+      <publisher/>
+      <group/>
+      <name>json-buffer</name>
+      <version>3.0.1</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">e1b57905f4769aa7d04c99be579b4f3dd7fe669ba1888bd3b8007983c91cad7399a534ff430c15456072c17d68cebea512e3dd6c7c70689966f46ea6236b1f49</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/json-buffer@3.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/keyv@4.5.2">
+      <publisher/>
+      <group/>
+      <name>keyv</name>
+      <version>4.5.2</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">e4c1db15a2a7f1c3529955bb0589e28de015944e1c600fd256489f560ae1ef2a2d9df84a9a3b97a432a3ac004b9d3d127c7595db53fca30d3b3867d1acd0e0f2</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/keyv@4.5.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/lowercase-keys@3.0.0">
+      <publisher/>
+      <group/>
+      <name>lowercase-keys</name>
+      <version>3.0.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">a33082ea0750fa0957390b2f78a0f462c0f2f034901630d3cf8cf2cc41cd579f893f90fad8b99f0d9ea8d5cc9c171f68b86f78d0ce5d13c0bc0937b0763d9859</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/lowercase-keys@3.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/mimic-response@3.1.0">
+      <publisher/>
+      <group/>
+      <name>mimic-response</name>
+      <version>3.1.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">cf4c9623ee050ebaf0792f199ade048f91dd266932d79f8bd9ee96827dfe88ae5f5b36fa4f77e1345ab6f8c79345bd3ae1ce96af837fc2fd03cd04e33731cd19</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/mimic-response@3.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/mimic-response@4.0.0">
+      <publisher/>
+      <group/>
+      <name>mimic-response</name>
+      <version>4.0.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">7b92121fdc4c614d03ceb4fe8e5f2adb37bd0fa79606da3e23c08da5ef9523e2b627f17f9373dd91d4ddcf8c2f1951f8353a68f8d4584d522e31010c31cb0baa</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/mimic-response@4.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/normalize-url@8.0.0">
+      <publisher/>
+      <group/>
+      <name>normalize-url</name>
+      <version>8.0.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">b951692a18f932178d04945388c67da44ffb843d504de12fba04895bf3a62f3029efc3c1e4ee9a75f30d4ef99f2a15c192f0b30beaea89f59c558a461704e39f</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/normalize-url@8.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/p-cancelable@3.0.0">
+      <publisher/>
+      <group/>
+      <name>p-cancelable</name>
+      <version>3.0.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">9a55604773c6bb3968d0c993764e1c5ea5d69704032e738d4c083ab26eb65e430912247137718bdd27df918beac289db90905cac8ed4befe5987dca3be7da253</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/p-cancelable@3.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/quick-lru@5.1.1">
+      <publisher/>
+      <group/>
+      <name>quick-lru</name>
+      <version>5.1.1</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">5aec802d18d63c31adb7fc3326269d3b901763ef2167cd215697ba3328af82b691116ef9d57dd26e146f1b778b28e60dfbc544bea2dc7f7c1d9ede386784b848</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/quick-lru@5.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/resolve-alpn@1.2.1">
+      <publisher/>
+      <group/>
+      <name>resolve-alpn</name>
+      <version>1.2.1</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">d1ad45e25ef7fd915939a9099d0dc5be4276fa0493416cffaf6284e4e7436344f13e6e61e0692a91659f338ed3ec7b1b9ceb5c255105e1ea42572eaeed0dcafa</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/resolve-alpn@1.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/responselike@3.0.0">
+      <publisher/>
+      <group/>
+      <name>responselike</name>
+      <version>3.0.0</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">e34c87c5b35c976fabcd7bd9b9592b62885ab61b122653135caaf21b9cbcb9c887bf5fb10cb1d0a608c6eb82543bd9eb12ada318b1fa219f01719cb0df0af07a</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/responselike@3.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:npm/typescript@5.0.4">
+      <publisher/>
+      <group/>
+      <name>typescript</name>
+      <version>5.0.4</version>
+      <description/>
+      <hashes>
+        <hash alg="SHA-512">716f53e56f71637edc73e8df127694bd7f757e8c6d1e4cdadcdc37c24a05e2c4a52a7d0c38d7647449dd8a0fea3c15973649a9961dcdcdac90cc2887338fe1ab</hash>
+      </hashes>
+      <licenses/>
+      <purl>pkg:npm/typescript@5.0.4</purl>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>./</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>Users/Ajmal.Kottilingal/dev/wise-bot-test/yarn.lock</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+  <dependencies>
+    <dependency ref="pkg:npm/@sindresorhus/is@5.3.0"/>
+    <dependency ref="pkg:npm/@szmarczak/http-timer@5.0.1">
+      <dependency ref="pkg:npm/defer-to-connect@2.0.1"/>
+    </dependency>
+    <dependency ref="pkg:npm/@types/http-cache-semantics@4.0.1"/>
+    <dependency ref="pkg:npm/cacheable-lookup@7.0.0"/>
+    <dependency ref="pkg:npm/cacheable-request@10.2.10">
+      <dependency ref="pkg:npm/responselike@3.0.0"/>
+    </dependency>
+    <dependency ref="pkg:npm/decompress-response@6.0.0">
+      <dependency ref="pkg:npm/mimic-response@3.1.0"/>
+    </dependency>
+    <dependency ref="pkg:npm/defer-to-connect@2.0.1"/>
+    <dependency ref="pkg:npm/form-data-encoder@2.1.4"/>
+    <dependency ref="pkg:npm/get-stream@6.0.1"/>
+    <dependency ref="pkg:npm/got@12.6.0">
+      <dependency ref="pkg:npm/responselike@3.0.0"/>
+    </dependency>
+    <dependency ref="pkg:npm/http-cache-semantics@4.1.1"/>
+    <dependency ref="pkg:npm/http2-wrapper@2.2.0">
+      <dependency ref="pkg:npm/resolve-alpn@1.2.1"/>
+    </dependency>
+    <dependency ref="pkg:npm/json-buffer@3.0.1"/>
+    <dependency ref="pkg:npm/keyv@4.5.2">
+      <dependency ref="pkg:npm/json-buffer@3.0.1"/>
+    </dependency>
+    <dependency ref="pkg:npm/lowercase-keys@3.0.0"/>
+    <dependency ref="pkg:npm/mimic-response@3.1.0"/>
+    <dependency ref="pkg:npm/mimic-response@4.0.0"/>
+    <dependency ref="pkg:npm/normalize-url@8.0.0"/>
+    <dependency ref="pkg:npm/p-cancelable@3.0.0"/>
+    <dependency ref="pkg:npm/quick-lru@5.1.1"/>
+    <dependency ref="pkg:npm/resolve-alpn@1.2.1"/>
+    <dependency ref="pkg:npm/responselike@3.0.0">
+      <dependency ref="pkg:npm/lowercase-keys@3.0.0"/>
+    </dependency>
+    <dependency ref="pkg:npm/typescript@5.0.4"/>
+    <dependency ref="pkg:application/wise-bot-test@1.0.0">
+      <dependency ref="pkg:npm/typescript@5.0.4"/>
+    </dependency>
+  </dependencies>
+</bom>
