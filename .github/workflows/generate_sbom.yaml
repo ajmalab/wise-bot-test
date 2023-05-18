@@ -47,7 +47,7 @@ jobs:
       
       - name: Generate sBOM
         shell: bash
-        run: cdxgen ./ ${{steps.generate-flags.output.flags}} -o ${{env.SBOM_FILENAME}}
+        run: cdxgen ./${{steps.generate-flags.output.flags}} -o ${{env.SBOM_FILENAME}}
 
 
 
