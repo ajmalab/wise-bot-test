@@ -43,6 +43,7 @@ jobs:
       
       - name: Generate sBOM
         shell: bash
+        needs: [generate-flags]
         run: echo ${{steps.generate-flags.output.flags}}
 
 
