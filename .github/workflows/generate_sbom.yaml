@@ -16,11 +16,11 @@ jobs:
     name: Generate sBOM
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      # - uses: actions/checkout@v3
 
-      - name: Setup cdxgen
-        shell: bash
-        run: npm install -g @cyclonedx/cdxgen@8.4.10
+      # - name: Setup cdxgen
+      #   shell: bash
+      #   run: npm install -g @cyclonedx/cdxgen@8.4.10
       
  
 
