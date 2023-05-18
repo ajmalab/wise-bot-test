@@ -16,15 +16,13 @@ jobs:
     name: Generate sBOM
     runs-on: ubuntu-latest
     steps:
-      # - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      # - name: Setup cdxgen
-      #   shell: bash
-      #   run: npm install -g @cyclonedx/cdxgen@8.4.2
+      - name: Setup cdxgen
+        shell: bash
+        run: npm install -g @cyclonedx/cdxgen@8.4.2
       
-      # - name: Generate sBOM
-      #   shell: bash
-      #   run: cdxgen ./ -o ${{env.SBOM_FILENAME}}
+ 
 
       # - uses: actions/upload-artifact@v3
       #   with:
@@ -34,11 +32,23 @@ jobs:
       - name: Output var
         id: gradle-check
         shell: bash
-        run: echo gradle_project=true >> $GITHUB_OUTPUT
+        run: echo gradle_project=false >> $GITHUB_OUTPUT
 
       - name: Create flags
+        id: generate-flags
         shell: bash
-        if: !steps.gradle-check.outputs.gradle_project
-        run: echo "I shouldn't run"
+        if: steps.gradle-check.outputs.gradle_project
+        run: |
+          if ${{steps.outputs.gradle_project}}
+          then
+            echo "flags=-t java" >> $GITHUB_OUTPUT
+          fi
+      
+      
+      - name: Generate sBOM
+        shell: bash
+        run: cdxgen ./ ${{steps.generate-flags.output.flags}} -o ${{env.SBOM_FILENAME}}
+
+
 
     
