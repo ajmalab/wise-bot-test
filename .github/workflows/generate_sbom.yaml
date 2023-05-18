@@ -25,7 +25,7 @@ jobs:
       - name: Output var
         id: gradle-check
         shell: bash
-        run: echo gradle_project=true >> $GITHUB_OUTPUT
+        run: echo gradle_project=false >> $GITHUB_OUTPUT
 
       - name: Create flags
         id: generate-flags
