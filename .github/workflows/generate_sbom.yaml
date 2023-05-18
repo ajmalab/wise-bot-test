@@ -30,7 +30,7 @@ jobs:
       - name: Create flags
         id: generate-flags
         shell: bash
-        if: steps.gradle-check.outputs.gradle_project == "true"
+        if: steps.gradle-check.outputs.gradle_project == true
         run: echo "flags=-t java" >> $GITHUB_OUTPUT
 
       - name: Generate sBOM
