@@ -38,6 +38,7 @@ jobs:
 
       - name: Create flags
         shell: bash
-        run: echo $GITHUB_OUTPUT
+        if: !steps.gradle-check.outputs.gradle_project
+        run: echo "I shouldn't run"
 
     
