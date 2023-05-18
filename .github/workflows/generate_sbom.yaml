@@ -38,16 +38,12 @@ jobs:
         id: generate-flags
         shell: bash
         if: steps.gradle-check.outputs.gradle_project
-        run: |
-          if "${{steps.outputs.gradle_project}}"
-          then
-            echo "flags=-t java" >> $GITHUB_OUTPUT
-          fi
+        run: echo "flags=-t java" >> $GITHUB_OUTPUT
       
       
       - name: Generate sBOM
         shell: bash
-        run: cdxgen ./${{steps.generate-flags.output.flags}} -o ${{env.SBOM_FILENAME}}
+        run: echo ${{steps.generate-flags.output.flags}}
 
 
 
