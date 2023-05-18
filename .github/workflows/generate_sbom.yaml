@@ -38,7 +38,7 @@ jobs:
 
       - name: Check if not condition
         shell: bash
-        if: !${{steps.gradle-check.outputs.gradle_project}}
+        if: ${{!steps.gradle-check.outputs.gradle_project}}
         run: echo "I shouldn't run"
 
     
