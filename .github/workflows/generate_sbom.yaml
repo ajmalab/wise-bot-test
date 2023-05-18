@@ -20,7 +20,7 @@ jobs:
 
       - name: Setup cdxgen
         shell: bash
-        run: npm install -g @cyclonedx/cdxgen@8.4.2
+        run: npm install -g @cyclonedx/cdxgen@8.4.10
       
  
 
@@ -39,7 +39,7 @@ jobs:
         shell: bash
         if: steps.gradle-check.outputs.gradle_project
         run: |
-          if ${{steps.outputs.gradle_project}}
+          if "${{steps.outputs.gradle_project}}"
           then
             echo "flags=-t java" >> $GITHUB_OUTPUT
           fi
