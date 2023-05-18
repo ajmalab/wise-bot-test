@@ -35,7 +35,7 @@ jobs:
 
       - name: Generate sBOM
         shell: bash
-        run: cdxgen ./${{steps.generate-flags.outputs.flags}} -o ${{env.SBOM_FILENAME}}
+        run: cdxgen ./ ${{steps.generate-flags.outputs.flags}} -o ${{env.SBOM_FILENAME}}
       
       # - uses: actions/upload-artifact@v3
       #   with:
