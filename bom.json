@@ -1,0 +1,524 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:15b80b91-05a5-4789-b713-79664c9e976a",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-05-06T11:26:33.166Z",
+    "tools": [
+      {
+        "vendor": "cyclonedx",
+        "name": "cdxgen",
+        "version": "8.4.2"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Prabhu Subramanian",
+        "email": "prabhu@appthreat.com"
+      }
+    ],
+    "component": {
+      "publisher": "",
+      "group": "",
+      "name": "wise-bot-test",
+      "version": "1.0.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:application/wise-bot-test@1.0.0",
+      "type": "application",
+      "bom-ref": "pkg:application/wise-bot-test@1.0.0"
+    }
+  },
+  "components": [
+    {
+      "publisher": "",
+      "group": "sindresorhus",
+      "name": "is",
+      "version": "5.3.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/sindresorhus/is@5.3.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/sindresorhus/is@5.3.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "szmarczak",
+      "name": "http-timer",
+      "version": "5.0.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/szmarczak/http-timer@5.0.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/szmarczak/http-timer@5.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "cacheable-lookup",
+      "version": "7.0.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/cacheable-lookup@7.0.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/cacheable-lookup@7.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "cacheable-request",
+      "version": "10.2.10",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/cacheable-request@10.2.10",
+      "type": "library",
+      "bom-ref": "pkg:npm/cacheable-request@10.2.10",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "mimic-response",
+      "version": "4.0.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/mimic-response@4.0.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/mimic-response@4.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "decompress-response",
+      "version": "6.0.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/decompress-response@6.0.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/decompress-response@6.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "defer-to-connect",
+      "version": "2.0.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/defer-to-connect@2.0.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/defer-to-connect@2.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "form-data-encoder",
+      "version": "2.1.4",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/form-data-encoder@2.1.4",
+      "type": "library",
+      "bom-ref": "pkg:npm/form-data-encoder@2.1.4",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "get-stream",
+      "version": "6.0.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/get-stream@6.0.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/get-stream@6.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "got",
+      "version": "12.6.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/got@12.6.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/got@12.6.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "http-cache-semantics",
+      "version": "4.1.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/http-cache-semantics@4.1.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/http-cache-semantics@4.1.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "http2-wrapper",
+      "version": "2.2.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/http2-wrapper@2.2.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/http2-wrapper@2.2.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "json-buffer",
+      "version": "3.0.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/json-buffer@3.0.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/json-buffer@3.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "keyv",
+      "version": "4.5.2",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/keyv@4.5.2",
+      "type": "library",
+      "bom-ref": "pkg:npm/keyv@4.5.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "lowercase-keys",
+      "version": "3.0.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/lowercase-keys@3.0.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/lowercase-keys@3.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "mimic-response",
+      "version": "3.1.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/mimic-response@3.1.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/mimic-response@3.1.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "normalize-url",
+      "version": "8.0.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/normalize-url@8.0.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/normalize-url@8.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "p-cancelable",
+      "version": "3.0.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/p-cancelable@3.0.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/p-cancelable@3.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "quick-lru",
+      "version": "5.1.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/quick-lru@5.1.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/quick-lru@5.1.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "resolve-alpn",
+      "version": "1.2.1",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/resolve-alpn@1.2.1",
+      "type": "library",
+      "bom-ref": "pkg:npm/resolve-alpn@1.2.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "responselike",
+      "version": "3.0.0",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:npm/responselike@3.0.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/responselike@3.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    },
+    {
+      "publisher": "",
+      "group": "",
+      "name": "typescript",
+      "version": "5.0.4",
+      "description": "",
+      "scope": "optional",
+      "licenses": [],
+      "purl": "pkg:npm/typescript@5.0.4",
+      "type": "library",
+      "bom-ref": "pkg:npm/typescript@5.0.4",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:application/wise-bot-test@1.0.0",
+      "dependsOn": [
+        "pkg:npm/got@12.6.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/@sindresorhus/is@5.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/@szmarczak/http-timer@5.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/@types/http-cache-semantics@4.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/cacheable-lookup@7.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/cacheable-request@10.2.10",
+      "dependsOn": [
+        "pkg:npm/mimic-response@4.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/mimic-response@4.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/decompress-response@6.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/defer-to-connect@2.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/form-data-encoder@2.1.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/get-stream@6.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/got@12.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/http-cache-semantics@4.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/http2-wrapper@2.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/json-buffer@3.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/keyv@4.5.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/lowercase-keys@3.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/mimic-response@3.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/normalize-url@8.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/p-cancelable@3.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/quick-lru@5.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/resolve-alpn@1.2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/responselike@3.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/typescript@5.0.4",
+      "dependsOn": []
+    }
+  ],
+  "externalReferences": [
+    {
+      "type": "other",
+      "url": ".",
+      "comment": "Base path"
+    },
+    {
+      "type": "other",
+      "url": "/Users/Ajmal.Kottilingal/dev/wise-bot-test/package-lock.json",
+      "comment": "Package file"
+    }
+  ]
+}

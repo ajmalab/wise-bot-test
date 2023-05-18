@@ -30,5 +30,15 @@ jobs:
         with:
           name: cyclonedx-sbom
           path: ${{env.SBOM_FILENAME}}
+      
+      - name: Output var
+        id: gradle-check
+        shell: bash
+        run: echo gradle_project=true >> $GITHUB_OUTPUT
+
+      - name: Check if not condition
+        shell: bash
+        if: !${{steps.gradle-check.outputs.gradle_project}}
+        run: echo "I shouldn't run"
 
     
