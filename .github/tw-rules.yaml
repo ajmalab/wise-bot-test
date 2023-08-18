@@ -1,6 +1,29 @@
 runChecks: true
-commands:
-  ping:
-    pongWithEmphasis: true
-  emergencyMerge:
-    emergencyMergeMethod: squash
+
+hasSharedOwnership: false
+
+checks:
+  approvers:
+    minValidApprovers: 1
+
+actions:
+  repo-settings:
+    deleteBranchOnMerge: true
+  branch-protection-settings:
+    branches:
+      - name: main
+        dismissStaleReviews: true
+        numRequiredReviews: 1
+        requireLinearHistory: true
+        requireConversationResolution: false
+        requireBranchUpToDate: true
+        restrictMerge:
+          teams:
+            - name: continuous-delivery
+        checks:
+          - name: Render Kustomize manifests
+            appId: github-actions
+            type: tests # tw-rules requires at least one of type tests so although they aren't tests we need to do this
+          - name: Render Helm charts
+            appId: github-actions
+            type: tests # tw-rules requires at least one of type tests so although they aren't tests we need to do this
