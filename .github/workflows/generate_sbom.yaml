@@ -1,5 +1,5 @@
 name: generate_sbom
-run-name: ${{ github.event.pull_request.head.sha }}
+run-name: gen_sbom_${{ github.event.pull_request.head.sha }}
 on:
   workflow_dispatch:
   pull_request:
@@ -16,17 +16,37 @@ jobs:
     name: Generate sBOM
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+
       - name: Setup cdxgen
         shell: bash
-        run: npm install -g @cyclonedx/cdxgen@8.2.4 
+        run: npm install -g @cyclonedx/cdxgen@8.4.10
       
-      - name: make file
+      - name: Output var
+        id: gradle-check
         shell: bash
-        run: echo {msg:"Hello World"}>>hello.json
+        run: echo gradle_project=false >> $GITHUB_OUTPUT
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: cyclonedx-sbom
-          path: hello.json
+      - name: Create flags
+        id: generate-flags
+        shell: bash
+        if: steps.gradle-check.outputs.gradle_project == true
+        run: echo "flags=-t java" >> $GITHUB_OUTPUT
+
+      - name: Generate sBOM
+        shell: bash
+        run: cdxgen ./ ${{steps.generate-flags.outputs.flags}} -o ${{env.SBOM_FILENAME}}
+      
+      # - uses: actions/upload-artifact@v3
+      #   with:
+      #     name: cyclonedx-sbom
+      #     path: ${{env.SBOM_FILENAME}}
+      
+      
+      
+      
+     
+
+
 
     
