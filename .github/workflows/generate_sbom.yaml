@@ -1,32 +1,11 @@
-name: generate_sbom
-run-name: ${{ github.event.pull_request.head.sha }}
+name: Publish SBOM
+run-name: Test reusable workflow
+
 on:
-  workflow_dispatch:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - closed
-
-env:
-  SBOM_FILENAME: ${{ github.event.repository.name }}-${{ github.event.pull_request.head.sha }}.json
-
+  push:
+    branches:
+      - main
+      - master
 jobs:
-  generate_sbom:
-    name: Generate sBOM
-    runs-on: ubuntu-latest
-    steps:
-      - name: Setup cdxgen
-        shell: bash
-        run: npm install -g @cyclonedx/cdxgen@8.2.4 
-      
-      - name: make file
-        shell: bash
-        run: echo {msg:"Hello World"}>>hello.json
-
-      - uses: actions/upload-artifact@v3
-        with:
-          name: cyclonedx-sbom
-          path: hello.json
-
-    
+  call-workflow-1-in-local-repo:
+    uses: test-tranferwise/required-workflows/.github/workflows/generate_and_publish_sbom.yaml@main
