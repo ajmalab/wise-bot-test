@@ -9,7 +9,7 @@ jobs:
       - name: create markdown
         shell: bash
         run: |
-          echo "* :rotating_light: - Major version upgrade" >> build/output.md
+          echo "* :rotating_light: - Major version upgrade" > build/output.md
 
       - uses: actions/upload-artifact@v4
         with:
