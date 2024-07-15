@@ -9,11 +9,11 @@ jobs:
       - name: create markdown
         shell: bash
         run: |
-          echo "* :rotating_light: - Major version upgrade" >> output.md
+          echo "* :rotating_light: - Major version upgrade" >> build/output.md
 
       - uses: actions/upload-artifact@v4
         with:
-          name: output.md
-          path: output.md
+          name: public-transfer-service-33-lockFileDiff.md
+          path: build/output.md
 
     
