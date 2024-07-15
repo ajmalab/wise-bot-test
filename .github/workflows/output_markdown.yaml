@@ -1,0 +1,20 @@
+name: Output markdown
+on: pull_request
+
+jobs:
+  output_markdown:
+    name: Output markdown
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: create markdown
+        shell: bash
+        run: |
+          echo "* :rotating_light: - Major version upgrade" > build/output.md
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-transfer-service-33-lockFileDiff.md
+          path: build/output.md
+
+    
